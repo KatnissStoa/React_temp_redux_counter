@@ -1,0 +1,64 @@
+.app-container {
+  height: 400px;
+  width: 300px;
+  background: #2b5870;
+  border-radius: 20px;
+  box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+}
+
+.temperature-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  font-family: sans-serif;
+}
+
+.temperature-display {
+  display: flex;
+  border-radius: 50%;
+  color: #ffffff;
+  height: 220px;
+  width: 220px;
+  border: 3px #ffffff solid;
+  transition: background 0.5s;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+}
+
+.cold {
+  background: #035aa6;
+}
+
+.hot {
+  background: #ff5200;
+}
+
+button {
+  border-radius: 100px;
+  height: 80px;
+  width: 80px;
+  font-size: 32px;
+  color: #ffffff;
+  background: rgb(105, 104, 104);
+  border: 2px #ffffff solid;
+}
+
+button:hover {
+  background: rgb(184, 184, 184);
+  /* 光标为一只手 */
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.button-container {
+  display: flex;
+  /* 均匀排列每个元素，每个元素之间间隔相等；space-between是首个元素置于起点，末尾元素置于终点，每个元素之间间隔相等。 */
+  justify-content: space-evenly;
+  align-items: center;
+}
